@@ -5,16 +5,16 @@ module.exports = {
         return usuarios
     },
     usuario(_, { id }) {
-        const sels = usuarios
+        const selecionado = usuarios
             .filter(u => u.id === id)
-        return sels ? sels[0] : null
+        return selecionado ? selecionado[0] : null
     },
     perfis() {
         return perfis
     },
     perfil(_, { id }) {
-        const sels = perfis
+        const selecionado = perfis
             .filter(p => p.id === id)
-        return sels ? sels[0] : null 
+        return selecionado ? selecionado[0] : null
     }
 }
